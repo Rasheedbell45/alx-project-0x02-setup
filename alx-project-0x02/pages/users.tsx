@@ -5,6 +5,7 @@ import UserCard from '@/components/common/UserCard';
 
 interface UsersPageProps {
   users: UserProps[];
+  
 }
 
 const UsersPage: React.FC<UsersPageProps> = ({ users }) => {
@@ -30,5 +31,6 @@ export const getStaticProps: GetStaticProps = async () => {
     },
   };
 };
+["getStaticProps()"]
 
 export default UsersPage;
